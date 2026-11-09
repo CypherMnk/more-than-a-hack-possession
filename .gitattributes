@@ -1,0 +1,2 @@
+# Keep source hashes and the vendored metric provenance stable across platforms.
+* text=auto eol=lf
