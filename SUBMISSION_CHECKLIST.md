@@ -88,8 +88,17 @@ Do not relabel an arbitrary CSV as V6 instead of using fresh generation.
 
 ## 5. Human submission review
 
-- Confirm the organisers' current delivery format, required files, deadline and
-  team details. This checklist does not assert that ZIP submission is accepted.
+- Current `SUBMISSION.md` was checked on November 14, 2026. The deadline is
+  November 17, 2026; no cutoff hour or timezone is specified there.
+- Use the exact registered team name: **Catalan compilers**.
+- Upload `Catalan compilers.csv`, provide the **public** source repository URL,
+  and upload `Catalan compilers.md` (Markdown is accepted; PDF is also accepted).
+  The form URL is emailed to registered participants. It requires a Google
+  account. Submit one editable response per team; the last before the deadline
+  is scored.
+- The ZIP is a private reproducibility backup, not a Google Form deliverable.
+- Confirm team registration/eligibility and the exact cutoff in the organisers'
+  email. The repository cannot verify these details.
 - Use the organiser-designated channel, not a public code repository or AI chat,
   for the result CSV and any permitted private artifacts.
 - The documented CSV contract is header `frame,label`, consecutive frames
@@ -102,7 +111,9 @@ Do not relabel an arbitrary CSV as V6 instead of using fresh generation.
 - Retain the exact code, result and private bundle used for submission locally.
   Packaging hashes record that bundle's contents; do not post them to AI services.
 - Submit only after explicit human review. No code here contacts the organisers.
-- The public repository was unreachable during the November 9, 2026 audit.
-  Confirm the current public SUBMISSION.md and RULES.md, including any assistance
-  disclosure requirement. The supplied clarification remains authoritative over
-  older/conflicting statements.
+- The public documentation and official format-validator source were retrieved
+  through GitHub's normal API. The validator's source commit is pinned locally
+  with the final delivery. Keep its prediction-count diagnostics local.
+- Although the public repository mentions a five-minute possession reference
+  and broader learning/debugging allowances, the supplied email clarification
+  remains authoritative. Do not use those statements to override its restrictions.

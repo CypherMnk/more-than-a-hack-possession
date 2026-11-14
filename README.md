@@ -4,6 +4,8 @@
 
 This is our project for Metrica Sports' **More than a Hack 2027**.
 
+**Team: Catalan compilers**
+
 For the **Initial Challenge**, the task is to predict ball possession at each
 frame of a football match: the home team, the away team, dead ball, or unknown.
 
@@ -132,7 +134,32 @@ python versions/v6_control/possession.py --data-dir 'D:\authorised\Tactical'
 **Use the V6 command above.** The root `possession.py` is the older V2 entry point.
 Earlier versions are kept under `versions/` for comparison.
 
-## Prepare a submission candidate
+## Initial Challenge submission
+
+Submit these three deliverables through the Google Form emailed to participants:
+
+1. `Catalan compilers.csv` - the algorithm's possession predictions.
+2. This public source-code repository's URL.
+3. [Catalan compilers.md](Catalan%20compilers.md) - the short technical document.
+
+The deadline is **November 17, 2026**. The public instructions do not specify
+a cutoff hour or timezone; confirm those in the organisers' email.
+Use the registered team name **Catalan compilers**.
+
+To regenerate the team-named CSV from the authorised input files:
+
+```powershell
+python versions/v6_control/possession.py --data-dir 'D:\authorised\Tactical' --out 'outputs/Catalan compilers.csv'
+```
+
+Replace the input path with your actual Tactical folder. The inference code
+needs no pip dependencies. Keep the V6 defaults unchanged.
+
+The locally prepared upload files live under `packages/final_submission/`,
+which is ignored by Git. Do not upload a ZIP in place of the CSV/document.
+Validate the exact CSV you will upload; format validation is not accuracy scoring.
+
+## Optional private submission backup
 
 The packaging workflow also needs the packages listed in
 `requirements-evaluation.txt` for the official CSV-format checker.
@@ -152,8 +179,8 @@ This creates the private archive `packages/v6_submission_candidate.zip`, contain
 - A method note, third-party notices and a verification manifest.
 
 The workflow tests and runs the code it packages, then checks the CSV format.
-**It does not measure accuracy or submit anything.** Confirm the organisers'
-current required files and submission format; do not assume they accept a ZIP.
+**It does not measure accuracy or submit anything.** This ZIP is a private
+reproducibility backup; the Google Form requires the individual deliverables above.
 
 ## Rules and limitations
 
@@ -172,6 +199,7 @@ inside the pitch may be missed. Parameters remain fixed and unvalidated.
 
 ## Further details
 
+- [Team technical document](Catalan%20compilers.md)
 - [V6 method and limitations](MODEL_CARD_V6.md)
 - [External accuracy testing](EXTERNAL_EVALUATION.md)
 - [Submission checklist](SUBMISSION_CHECKLIST.md)
